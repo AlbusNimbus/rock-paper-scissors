@@ -1,17 +1,13 @@
 :root {
-    --primary-light: #D6D5C9;
-    --primary-dark: #B9BAA3;
+    --primary-light: #c0bfb9;
+    --primary-dark: #cecece;
     --secondary-dark: #A22C29;
     --secondary-dark-hover: #da3d3a;
     --secondary-dark-active: rgb(236, 80, 72);
     --header: #0A100D;
 }
 
-html {
-    /* footer support */
-    position: relative;
-    min-height: 100%;
-}
+
 
 *,
 *::before,
@@ -24,7 +20,7 @@ html {
 body {
     background-color: var(--primary-dark);
     color: var(--primary-light);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -34,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 40px 0px;
+    color: #da3d3a;
     background-color: var(--header);
     font-size: 60px;
 
@@ -50,7 +47,7 @@ body {
 .h1 {
     font-size: 40px;
     color: #0A100D;
-    font-weight: 900px;
+    font-weight: 900;
     margin-top: 50px;
 }
 
