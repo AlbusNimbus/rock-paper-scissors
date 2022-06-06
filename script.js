@@ -141,6 +141,9 @@ function closeEndgame() {
   overlay.classList.remove('active')
 }
 function setFinalMessage() {
+  if(playerScore == computerScore){
+    return endgameMsg.textContent = "It's a Tie!"
+  }
   return playerScore > computerScore
     ? (endgameMsg.textContent = 'You won!')
     : (endgameMsg.textContent = 'You lost...')
